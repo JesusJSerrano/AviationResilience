@@ -446,7 +446,7 @@ export default function LandingPage() {
                   Exercise Marketplace
                 </Badge>
                 <h3 className="text-3xl md:text-4xl font-bold text-navy-900 tracking-tight">
-                  Multiagency and Multiairline Exercise Marketplace
+                  Multiagency and Multiairline Exercise Group
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed font-light">
                   Coordinate and join multiagency, multiairline exercises effortlessly. Build true readiness with our
@@ -479,7 +479,7 @@ export default function LandingPage() {
                 </div>
                 {/* Video play button overlay */}
                 <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
-                  VIDEO
+                  
                 </div>
               </div>
             </div>
