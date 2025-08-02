@@ -392,9 +392,7 @@ export default function LandingPage() {
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
                  
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                 
-                </div>
+               
               </div>
             </div>
 
