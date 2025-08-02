@@ -393,7 +393,7 @@ export default function LandingPage() {
                  
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <ZoomIn className="h-12 w-12 text-white" />
+                 
                 </div>
               </div>
             </div>
