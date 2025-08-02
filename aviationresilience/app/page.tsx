@@ -211,7 +211,7 @@ export default function LandingPage() {
                 <div className="relative">
                   <div className="relative overflow-hidden rounded-lg shadow-2xl border border-gray-200">
                     <img
-                      src="/placeholder.svg?height=600&width=800&text=Aviation+ERP+Dashboard+Cockpit+Interface"
+                      src="/images/oversight.png?height=600&width=800&text=Aviation+ERP+Dashboard+Cockpit+Interface"
                       alt="Aviation Emergency Response Planning Dashboard - Cockpit-style interface showing real-time station readiness, flight operations monitoring, and emergency response coordination"
                       className="w-full transition-transform duration-700 hover:scale-105"
                       loading="eager"
@@ -318,10 +318,10 @@ export default function LandingPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
               <div className="order-2 lg:order-1 relative group">
                 <img
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/images/oversight.png?height=500&width=600"
                   alt="Real-time oversight dashboard screenshot"
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
-                  onClick={() => openLightbox("/placeholder.svg?height=800&width=1200")}
+                  onClick={() => openLightbox("/images/oversight.png?height=800&width=1200")}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <ZoomIn className="h-12 w-12 text-white" />
