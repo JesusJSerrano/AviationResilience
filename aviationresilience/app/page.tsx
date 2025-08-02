@@ -321,7 +321,7 @@ export default function LandingPage() {
                   src="/images/oversight.png?height=500&width=600"
                   alt="Real-time oversight dashboard screenshot"
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
-                  onClick={() => openLightbox("/images/oversight.png?height=800&width=1200")}
+                
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <ZoomIn className="h-12 w-12 text-white" />
@@ -390,7 +390,7 @@ export default function LandingPage() {
                   src="/images/contacts.png?height=500&width=600"
                   alt="Local information module interface"
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
-                  onClick={() => openLightbox("/images/contacts.png?height=800&width=1200")}
+                 
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <ZoomIn className="h-12 w-12 text-white" />
@@ -405,7 +405,7 @@ export default function LandingPage() {
                   src="/images/training.png?height=500&width=600"
                   alt="Multiagency training management platform"
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
-                  onClick={() => openLightbox("/images/training.png?height=800&width=1200")}
+                  
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <ZoomIn className="h-12 w-12 text-white" />
@@ -472,7 +472,7 @@ export default function LandingPage() {
                   src="/images/exercise.png?height=500&width=600"
                   alt="Exercise marketplace coordination system"
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
-                  onClick={() => openLightbox("/images/exercise.png?height=800&width=1200")}
+                 
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <ZoomIn className="h-12 w-12 text-white" />
