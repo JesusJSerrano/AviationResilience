@@ -323,9 +323,7 @@ export default function LandingPage() {
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
                 
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <ZoomIn className="h-12 w-12 text-white" />
-                </div>
+               
                 {/* Video play button overlay */}
                 <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
                   
@@ -405,9 +403,7 @@ export default function LandingPage() {
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
                   
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <ZoomIn className="h-12 w-12 text-white" />
-                </div>
+               
               </div>
               <div className="order-1 lg:order-2 space-y-6">
                 <Badge className="bg-purple-100 text-purple-700 px-4 py-2 text-sm font-medium">
@@ -472,9 +468,7 @@ export default function LandingPage() {
                   className="w-full rounded-lg shadow-2xl cursor-pointer transition-transform group-hover:scale-105"
                  
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <ZoomIn className="h-12 w-12 text-white" />
-                </div>
+                
                 {/* Video play button overlay */}
                 <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
                   
