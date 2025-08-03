@@ -158,7 +158,7 @@ export default function ContactPage() {
                     </div>
                     <div className="space-y-3">
                       <label className="text-sm font-medium text-gray-700">Email *</label>
-                      <Input type="email" placeholder="your.email@company.com" className="h-12" required />
+                      <Input type="email" placeholder="jesus.jimenez.serrano.madrid@gmail.com" className="h-12" required />
                     </div>
                     <div className="space-y-3">
                       <label className="text-sm font-medium text-gray-700">Message *</label>
