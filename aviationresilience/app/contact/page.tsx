@@ -138,44 +138,11 @@ export default function ContactPage() {
 
               {/* Contact Form */}
               <div id="contact-form">
-                <Card className="border-0 shadow-xl bg-white">
-                  <CardHeader className="pb-8">
-                    <CardTitle className="text-2xl text-navy-900">Send Us a Message</CardTitle>
-                    <CardDescription className="text-lg">
-                      Fill out the form below and we'll get back to you within 24 hours.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div className="space-y-3">
-                        <label className="text-sm font-medium text-gray-700">Name *</label>
-                        <Input placeholder="Your full name" className="h-12" required />
-                      </div>
-                      <div className="space-y-3">
-                        <label className="text-sm font-medium text-gray-700">Organisation *</label>
-                        <Input placeholder="Your organisation" className="h-12" required />
-                      </div>
-                    </div>
-                    <div className="space-y-3">
-                      <label className="text-sm font-medium text-gray-700">Email *</label>
-                      <Input type="email" placeholder="jesus.jimenez.serrano.madrid@gmail.com" className="h-12" required />
-                    </div>
-                    <div className="space-y-3">
-                      <label className="text-sm font-medium text-gray-700">Message *</label>
-                      <Textarea
-                        placeholder="Tell us about your emergency preparedness needs, current challenges, or any specific questions you have about our platform..."
-                        className="min-h-[140px] text-base"
-                        required
-                      />
-                    </div>
-                    <Button className="w-full bg-sky-500 hover:bg-sky-600 text-white py-4 text-lg font-semibold transition-all duration-200 hover:shadow-lg">
-                      Send Message
-                    </Button>
-                    <p className="text-sm text-gray-500 text-center">
-                      By submitting this form, you agree to our privacy policy and terms of service.
-                    </p>
-                  </CardContent>
-                </Card>
+               <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/jimenez-aviationresilience/30min" style="min-width:320px;height:700px;">
+                </div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
               </div>
             </div>
           </div>
