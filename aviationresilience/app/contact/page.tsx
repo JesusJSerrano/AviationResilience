@@ -1,9 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Textarea } from "@/components/ui/textarea"
 import { Plane, Mail, Phone, MapPin } from "lucide-react"
 import Link from "next/link"
 import { useEffect } from "react"
@@ -17,6 +15,19 @@ export default function ContactPage() {
       const element = document.getElementById(window.location.hash.substring(1))
       if (element) {
         element.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+
+    // Load Calendly script
+    const script = document.createElement("script")
+    script.src = "https://assets.calendly.com/assets/external/widget.js"
+    script.async = true
+    document.body.appendChild(script)
+
+    return () => {
+      // Cleanup script on unmount
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
       }
     }
   }, [])
@@ -110,9 +121,7 @@ export default function ContactPage() {
                       <Phone className="h-6 w-6 text-sky-600" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-navy-900 mb-2">Call Us</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-sm text-gray-500 mt-1">Monday - Friday, 9AM - 6PM EST</p>
+                      
                     </div>
                   </div>
 
@@ -134,15 +143,46 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
+
+                <div className="bg-sky-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-semibold text-navy-900 mb-3">Book Your Demo</h3>
+                  <p className="text-gray-600 mb-4">
+                    Use the calendar on the right to schedule a 30-minute Demo with our aviation emergency
+                    planning experts. We'll discuss your specific needs and challenges, and show you how our platform
+                    can strengthen your crisis readiness.
+                  </p>
+                  <div className="bg-white p-4 rounded border-l-4 border-sky-500">
+                    <p className="text-sm text-gray-700">
+                      <strong>What to expect:</strong>
+                    </p>
+                    <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                      <li>• 30-minute personalized Demo</li>
+                      <li>• Assessment of your current readiness</li>
+                      <li>• Tailored recommendations</li>
+                      <li>• No sales pressure, just expert advice</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              {/* Contact Form */}
+              {/* Calendly Widget */}
               <div id="contact-form">
-               <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/jimenez-aviationresilience/30min" style="min-width:320px;height:700px;">
-                </div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                <!-- Calendly inline widget end -->
+                <Card className="border-0 shadow-xl bg-white">
+                  <CardHeader className="pb-6">
+                    <CardTitle className="text-2xl text-navy-900">Schedule Your Consultation</CardTitle>
+                    <CardDescription className="text-lg">
+                      Select a convenient time for your 30-minute demo with our emergency planning experts.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    {/* Calendly inline widget */}
+                    <div
+                      className="calendly-inline-widget"
+                      data-url="https://calendly.com/jimenez-aviationresilience/30min"
+                      style={{ minWidth: "320px", height: "700px" }}
+                    ></div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
