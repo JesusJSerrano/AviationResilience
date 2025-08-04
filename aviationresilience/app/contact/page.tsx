@@ -169,9 +169,9 @@ export default function ContactPage() {
               <div id="contact-form">
                 <Card className="border-0 shadow-xl bg-white">
                   <CardHeader className="pb-6">
-                    <CardTitle className="text-2xl text-navy-900">Schedule Your Consultation</CardTitle>
+                    <CardTitle className="text-2xl text-navy-900">Schedule Your Demo</CardTitle>
                     <CardDescription className="text-lg">
-                      Select a convenient time for your 30-minute demo with our emergency planning experts.
+                      Select a convenient time for your 30-minute demo to show you how our platform can strengthen your crisis readiness.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="p-0">
